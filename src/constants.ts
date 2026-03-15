@@ -3,7 +3,7 @@ import { Project, NavLink, Feature, Tech } from './types';
 
 export const PROJECTS: Project[] = [
   {
-    id: 'driverdash',
+    id: 'DriverDash',
     title: 'DriverDash',
     tag: 'Mobilidade',
     description: 'Gestão financeira para motoristas de aplicativo. Controle faturamento, combustível, despesas e relatórios inteligentes.',
@@ -11,8 +11,8 @@ export const PROJECTS: Project[] = [
     icon: Car,
   },
   {
-    id: 'rotalucro',
-    title: 'RotaLucro',
+    id: 'Rotadolucro',
+    title: 'Rota do Lucro',
     tag: 'Logística',
     description: 'Controle de lucro para entregadores e logística. Simule rotas, acompanhe custos e descubra a rentabilidade real das entregas.',
     link: 'https://rotadolucro.ntaplicacoes.com.br',
