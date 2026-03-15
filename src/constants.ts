@@ -15,15 +15,15 @@ export const PROJECTS: Project[] = [
     title: 'RotaLucro',
     tag: 'Logística',
     description: 'Controle de lucro para entregadores e logística. Simule rotas, acompanhe custos e descubra a rentabilidade real das entregas.',
-    link: 'https://rotalucro.ntaplicacoes.com.br',
+    link: 'https://rotadolucro.ntaplicacoes.com.br',
     icon: Truck,
   },
   {
     id: 'roxou',
     title: 'Roxou',
     tag: 'Entretenimento',
-    description: 'Plataforma digital de eventos e entretenimento. Descubra festas, bares e eventos da cidade.',
-    link: 'https://roxou.ntaplicacoes.com.br',
+    description: 'Plataforma digital e guia de eventos e entretenimento. Descubra festas, bares e eventos da cidade.',
+    link: 'https://roxou.com.br',
     icon: PartyPopper,
   },
 ];
