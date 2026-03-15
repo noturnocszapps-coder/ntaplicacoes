@@ -1,47 +1,101 @@
-import { Car, Truck, PartyPopper, Zap, BarChart3, Cloud } from 'lucide-react';
+import { 
+  Car, Truck, PartyPopper, Zap, BarChart3, Cloud, 
+  Globe, Cpu, MessageSquare, Layout, Link2, Settings,
+  Bot, Repeat, UserPlus, PieChart, Smartphone, ClipboardCheck,
+  Search, PenTool, Code2, Rocket
+} from 'lucide-react';
 import { Project, NavLink, Feature, Tech } from './types';
 
 export const PROJECTS: Project[] = [
   {
-    id: 'DriverDash',
+    id: 'driverdash',
     title: 'DriverDash',
-    tag: 'Mobilidade',
-    description: 'Gestão financeira para motoristas de aplicativo. Controle faturamento, combustível, despesas e relatórios inteligentes.',
+    tag: 'Mobilidade & IA',
+    description: 'Gestão financeira inteligente para motoristas. Algoritmos de previsão de ganhos e otimização de despesas.',
     link: 'https://driverdash.ntaplicacoes.com.br',
     icon: Car,
   },
   {
-    id: 'Rotadolucro',
-    title: 'Rota do Lucro',
-    tag: 'Logística',
-    description: 'Controle de lucro para entregadores e logística. Simule rotas, acompanhe custos e descubra a rentabilidade real das entregas.',
-    link: 'https://rotadolucro.ntaplicacoes.com.br',
+    id: 'rotalucro',
+    title: 'RotaLucro',
+    tag: 'Logística & Dados',
+    description: 'Análise preditiva de lucro para logística. Simulação de rotas com IA para máxima rentabilidade.',
+    link: 'https://rotalucro.ntaplicacoes.com.br',
     icon: Truck,
   },
   {
     id: 'roxou',
     title: 'Roxou',
     tag: 'Entretenimento',
-    description: 'Plataforma digital e guia de eventos e entretenimento. Descubra festas, bares e eventos da cidade.',
-    link: 'https://roxou.com.br',
+    description: 'Plataforma de eventos com recomendação personalizada. Otimização de busca por geolocalização.',
+    link: 'https://roxou.ntaplicacoes.com.br',
     icon: PartyPopper,
   },
 ];
 
+export const SERVICES = [
+  {
+    title: 'Desenvolvimento de Sites',
+    description: 'Websites institucionais modernos, rápidos e otimizados para conversão.',
+    icon: Globe,
+  },
+  {
+    title: 'Sistemas Personalizados',
+    description: 'Softwares sob medida para resolver problemas específicos do seu negócio.',
+    icon: Cpu,
+  },
+  {
+    title: 'Automação com IA',
+    description: 'Integramos inteligência artificial para automatizar tarefas repetitivas.',
+    icon: Bot,
+  },
+  {
+    title: 'Chatbots Inteligentes',
+    description: 'Atendimento 24/7 com IA que entende e resolve as dúvidas dos seus clientes.',
+    icon: MessageSquare,
+  },
+  {
+    title: 'Landing Pages',
+    description: 'Páginas de alta conversão focadas em transformar visitantes em leads.',
+    icon: Layout,
+  },
+  {
+    title: 'Integrações e APIs',
+    description: 'Conectamos seus sistemas para um fluxo de dados contínuo e eficiente.',
+    icon: Link2,
+  },
+];
+
+export const AI_BENEFITS = [
+  { title: 'Automação de Atendimento', icon: Bot },
+  { title: 'Automação de Processos', icon: Repeat },
+  { title: 'Captura de Leads', icon: UserPlus },
+  { title: 'Dashboards Inteligentes', icon: PieChart },
+  { title: 'Integração WhatsApp', icon: Smartphone },
+  { title: 'Organização de Operações', icon: ClipboardCheck },
+];
+
+export const PROCESS_STEPS = [
+  { title: 'Diagnóstico', description: 'Entendemos seus desafios e objetivos de negócio.', icon: Search },
+  { title: 'Planejamento', description: 'Desenhamos a melhor solução técnica e estratégica.', icon: PenTool },
+  { title: 'Desenvolvimento', description: 'Construímos sua plataforma com tecnologias de ponta.', icon: Code2 },
+  { title: 'Implantação', description: 'Lançamos seu projeto com suporte e monitoramento.', icon: Rocket },
+];
+
 export const FEATURES: Feature[] = [
   {
-    title: 'Performance',
-    description: 'Aplicações ultra rápidas, construídas com tecnologias modernas e arquitetura escalável.',
+    title: 'Tecnologia Moderna',
+    description: 'Utilizamos as ferramentas mais atuais do mercado para garantir performance e segurança.',
     icon: Zap,
   },
   {
-    title: 'Inteligência de Dados',
-    description: 'Relatórios e métricas que ajudam profissionais a tomar decisões melhores.',
+    title: 'Design Personalizado',
+    description: 'Interfaces exclusivas focadas na melhor experiência para o seu usuário final.',
     icon: BarChart3,
   },
   {
-    title: 'Infraestrutura Cloud',
-    description: 'Deploy global com tecnologias modernas como Vercel, Supabase e Firebase.',
+    title: 'Soluções Escaláveis',
+    description: 'Sistemas preparados para crescer junto com a sua empresa sem perda de qualidade.',
     icon: Cloud,
   },
 ];
@@ -56,8 +110,8 @@ export const TECH_STACK: Tech[] = [
 ];
 
 export const NAV_LINKS: NavLink[] = [
-  { name: 'Home', path: '/' },
+  { name: 'Início', path: '/' },
   { name: 'Quem Somos', path: '/quem-somos' },
-  { name: 'Política de Privacidade', path: '/politica-de-privacidade' },
+  { name: 'Privacidade', path: '/politica-de-privacidade' },
   { name: 'Contato', path: '/contato' },
 ];

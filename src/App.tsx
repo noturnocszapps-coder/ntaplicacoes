@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
+import { Layout } from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -20,9 +21,9 @@ function ScrollToTop() {
 export default function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-black text-zinc-100 selection:bg-emerald-500/30 selection:text-emerald-400">
-        <ScrollToTop />
-        <Navbar />
+      <ScrollToTop />
+      <Navbar />
+      <Layout>
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -31,8 +32,8 @@ export default function App() {
             <Route path="/politica-de-privacidade" element={<Privacy />} />
           </Routes>
         </main>
-        <Footer />
-      </div>
+      </Layout>
+      <Footer />
     </Router>
   );
 }
