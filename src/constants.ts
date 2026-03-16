@@ -17,10 +17,10 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 'rotalucro',
-    title: 'RotaLucro',
+    title: 'Rota do Lucro',
     tag: 'Logística & Dados',
     description: 'Análise preditiva de lucro para logística. Simulação de rotas com IA para máxima rentabilidade.',
-    link: 'https://rotalucro.ntaplicacoes.com.br',
+    link: 'https://rotadolucro.ntaplicacoes.com.br/',
     icon: Truck,
   },
   {
@@ -28,7 +28,7 @@ export const PROJECTS: Project[] = [
     title: 'Roxou',
     tag: 'Entretenimento',
     description: 'Plataforma de eventos com recomendação personalizada. Otimização de busca por geolocalização.',
-    link: 'https://roxou.ntaplicacoes.com.br',
+    link: 'https://roxou.com.br',
     icon: PartyPopper,
   },
 ];
