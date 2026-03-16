@@ -29,7 +29,7 @@ const Privacy: React.FC = () => {
                 id: '01', 
                 title: 'Coleta de Dados', 
                 icon: Eye,
-                content: 'A NT Aplicações coleta informações básicas de navegação para melhorar a experiência do usuário em nosso hub. Dados específicos de cada plataforma (DriverDash, RotaLucro, Roxou) são tratados de forma independente em seus respectivos domínios.'
+                content: 'A NT Aplicações coleta informações básicas de navegação para melhorar a experiência do usuário em nosso hub. Dados específicos de cada plataforma (DriverDash, Rota do Lucro, Roxou) são tratados de forma independente em seus respectivos domínios.'
               },
               { 
                 id: '02', 
