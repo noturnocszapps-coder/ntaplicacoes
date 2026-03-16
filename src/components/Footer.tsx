@@ -11,17 +11,17 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-16">
           {/* Brand */}
-          <div className="col-span-1 md:col-span-2 space-y-8">
+          <div className="space-y-8">
             <Link to="/" className="flex items-center space-x-3 group">
               <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center group-hover:glow-purple transition-all duration-500">
                 <Bot className="w-6 h-6 text-white" />
               </div>
               <span className="text-2xl font-black tracking-tighter text-white font-display">NT <span className="text-gradient">Aplicações</span></span>
             </Link>
-            <p className="text-text-muted text-lg max-w-sm font-medium leading-relaxed">
+            <p className="text-text-muted text-sm font-medium leading-relaxed">
               Soluções digitais inteligentes e inteligência artificial aplicada ao crescimento de empresas modernas.
             </p>
-            <div className="flex space-x-6">
+            <div className="flex space-x-4">
               {[
                 { icon: Instagram, link: 'https://instagram.com/onoturnocsz' },
                 { icon: Mail, link: 'mailto:contato@ntaplicacoes.com.br' },
@@ -32,9 +32,9 @@ export const Footer: React.FC = () => {
                   href={social.link} 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="w-12 h-12 glass rounded-xl flex items-center justify-center text-text-muted hover:text-secondary hover:border-secondary/50 transition-all duration-300"
+                  className="w-10 h-10 glass rounded-xl flex items-center justify-center text-text-muted hover:text-secondary hover:border-secondary/50 transition-all duration-300"
                 >
-                  <social.icon className="w-5 h-5" />
+                  <social.icon className="w-4 h-4" />
                 </a>
               ))}
             </div>
@@ -46,9 +46,33 @@ export const Footer: React.FC = () => {
             <ul className="space-y-4">
               {NAV_LINKS.map((link) => (
                 <li key={link.path}>
-                  <a href={link.path} className="text-text-muted hover:text-primary font-bold text-sm transition-all duration-300 flex items-center group">
+                  <Link to={link.path} className="text-text-muted hover:text-primary font-bold text-sm transition-all duration-300 flex items-center group">
                     <span className="w-0 group-hover:w-4 h-px bg-primary mr-0 group-hover:mr-2 transition-all duration-300" />
                     {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Projects */}
+          <div>
+            <h4 className="text-xs font-black text-white uppercase tracking-[0.2em] mb-8">Projetos</h4>
+            <ul className="space-y-4">
+              {[
+                { name: 'DriverDash', link: 'https://driverdash.ntaplicacoes.com.br' },
+                { name: 'Rota do Lucro', link: 'https://rotadolucro.ntaplicacoes.com.br/' },
+                { name: 'Roxou', link: 'https://roxou.com.br' }
+              ].map((project) => (
+                <li key={project.name}>
+                  <a 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-text-muted hover:text-secondary font-bold text-sm transition-all duration-300 flex items-center group"
+                  >
+                    <span className="w-0 group-hover:w-4 h-px bg-secondary mr-0 group-hover:mr-2 transition-all duration-300" />
+                    {project.name}
                   </a>
                 </li>
               ))}

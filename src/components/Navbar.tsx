@@ -36,16 +36,22 @@ export const Navbar: React.FC = () => {
           <div className="hidden md:flex items-center space-x-10">
             <div className="flex items-baseline space-x-10">
               {NAV_LINKS.map((link) => (
-                <a
+                <Link
                   key={link.path}
-                  href={link.path}
+                  to={link.path}
                   className={`text-sm font-bold uppercase tracking-widest transition-all hover:text-secondary ${
                     location.pathname === link.path ? 'text-primary' : 'text-text-muted'
                   }`}
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
+              <a
+                href="/#projetos"
+                className="text-sm font-bold uppercase tracking-widest transition-all text-text-muted hover:text-secondary"
+              >
+                Projetos
+              </a>
             </div>
             <div className="h-6 w-px bg-white/10" />
             <Link
@@ -80,9 +86,9 @@ export const Navbar: React.FC = () => {
           >
             <div className="glass rounded-[2rem] p-6 space-y-4 shadow-2xl border-primary/20">
               {NAV_LINKS.map((link) => (
-                <a
+                <Link
                   key={link.path}
-                  href={link.path}
+                  to={link.path}
                   onClick={() => setIsOpen(false)}
                   className={`block px-6 py-4 rounded-2xl text-lg font-bold uppercase tracking-widest transition-all ${
                     location.pathname === link.path
@@ -91,8 +97,15 @@ export const Navbar: React.FC = () => {
                   }`}
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
+              <a
+                href="/#projetos"
+                onClick={() => setIsOpen(false)}
+                className="block px-6 py-4 rounded-2xl text-lg font-bold uppercase tracking-widest text-text-muted hover:text-white hover:bg-white/5 transition-all"
+              >
+                Projetos
+              </a>
               <div className="pt-4 space-y-4">
                 <Link
                   to="/contato"
